@@ -18,7 +18,7 @@ content += '</tr>';
 
 
 for (i = 0; i < upgradeIDs.length; i++) {
-	Math.seedrandom(seed+'-hiddenSlotUpgrade-'+upgradeIDs[i]);
+	Math.seedrandom(seed.value+'-hiddenSlotUpgrade-'+upgradeIDs[i]);
 	if (Math.random()<0.15) {
 		content += '<tr><td>';
 		content += upgradeNames[i];
